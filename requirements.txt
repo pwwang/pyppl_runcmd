@@ -1,0 +1,4 @@
+cmdy
+pyppl==3.*
+pytest
+pytest-cov
