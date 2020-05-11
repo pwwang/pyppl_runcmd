@@ -1,10 +1,11 @@
 """Add annotation to PyPPL processes"""
 import cmdy
 from pyppl.plugin import hookimpl
-from pyppl.logger import logger
+from pyppl.logger import Logger
 
 __version__ = "0.0.1"
 
+logger = Logger(plugin='runcmd') # pylint: disable=invalid-name
 
 @hookimpl
 def setup(config):
