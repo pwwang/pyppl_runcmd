@@ -36,7 +36,7 @@ def _runcmd(cmd, proc):
                            **proc.envs).render(dict(proc=proc, args=proc.args))
     logger.info('Running command from pyppl_runcmd ...', proc=proc.id)
     logger.debug('  ' + cmdstr, proc=proc.id)
-    cmd = cmdy.bash(c=cmdstr, _iter=True, _raise=False)
+    cmd = cmdy.bash(c=cmdstr, _raise=False).iter
     for line in cmd:
         logger.cmdout(line, proc=proc.id)
 
