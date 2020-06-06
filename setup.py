@@ -14,7 +14,7 @@ readme = ''
 setup(
     long_description=readme,
     name='pyppl_runcmd',
-    version='0.0.2',
+    version='0.0.3',
     description='Allowing to run local command before and after each process for PyPPL',
     python_requires='==3.*,>=3.6.0',
     author='pwwang',

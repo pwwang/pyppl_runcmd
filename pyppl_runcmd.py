@@ -4,7 +4,7 @@ from pyppl.plugin import hookimpl
 from pyppl.logger import Logger
 from pyppl.config import config
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 
 logger = Logger(plugin='runcmd') # pylint: disable=invalid-name
 
