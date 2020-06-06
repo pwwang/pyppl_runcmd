@@ -2,25 +2,21 @@
 import cmdy
 from pyppl.plugin import hookimpl
 from pyppl.logger import Logger
+from pyppl.config import config
 
 __version__ = "0.0.2"
 
 logger = Logger(plugin='runcmd') # pylint: disable=invalid-name
 
-@hookimpl
-def setup(config):
-    """Add default configurations"""
-    config.config.runcmd_failfast = True
-    config.config.runcmd_pre = ''
-    config.config.runcmd_post = ''
-
+config.config.runcmd_failfast = True
+config.config.runcmd_pre = ''
+config.config.runcmd_post = ''
 
 @hookimpl
 def logger_init(logger):  # pylint: disable=redefined-outer-name
     """Add log levels"""
     logger.add_level('CMDOUT')
     logger.add_level('CMDERR', 'ERROR')
-
 
 @hookimpl
 def proc_init(proc):

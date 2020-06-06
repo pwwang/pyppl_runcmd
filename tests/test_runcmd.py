@@ -6,11 +6,11 @@ from pyppl import Proc
 from pyppl.config import config
 from pyppl.logger import logger, LEVEL_GROUPS
 
-def test_setup():
-	pyppl_runcmd.setup(config)
-	assert config.config.runcmd_pre == ''
-	assert config.config.runcmd_post == ''
-	assert config.config.runcmd_failfast is True
+# def test_setup():
+# 	pyppl_runcmd.setup(config)
+# 	assert config.config.runcmd_pre == ''
+# 	assert config.config.runcmd_post == ''
+# 	assert config.config.runcmd_failfast is True
 
 def test_logger_init():
 	pyppl_runcmd.logger_init(logger)
