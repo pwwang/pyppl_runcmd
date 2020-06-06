@@ -6,10 +6,10 @@ changelog = py:False
 publish = py:False
 
 ; Whether check the version (__version__) in source file.
-checksource = py:True
+checksource = py:False
 
 ; Whether check the version in pyproject.toml file.
-checktoml = py:True
+checktoml = py:False
 
 ; The source file or the package name.
 versource = pyppl_runcmd
